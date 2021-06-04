@@ -1,0 +1,21 @@
+.color {
+    width: 200px;
+    height: 200px;
+}
+#cian {
+    background: #00a3cc;
+}
+#gold {
+    background: #cca300;
+}
+#violet {
+    background: #6600ff;
+}
+#green {
+    background: #009900;
+}
+#start {
+    display: block;
+    margin: auto;
+    font-size:20px;
+}
