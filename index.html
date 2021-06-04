@@ -1,23 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="author" content="Ivo Montanari">
+    <title>Simon Dice</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
-<body class="bg-primary">
-    <h2 class="container bg-light text-center border rounded">Te crees mejor que SIMÓN?! Simón dice: Pudrete! Nadie me gana!</h1>
-    <div class="container bg-light border rounded">
-        <h3 id="level" class="text-center mr-4">Te atreves?</h3>
-        <div class="container row justify-content-center" id="simon">
-            <div class="color m-2 col-4 border rounded" id="cian"></div>
-            <div class="color m-2 col-4 border rounded" id="gold"></div>
-            <div class="color m-2 col-4 border rounded" id="violet"></div>
-            <div class="color m-2 col-4 border rounded" id="green"></div>
+<body class="bg-dark">
+    <h2 class="container text-center text-light mt-5">¡¿Te crees mejor que SIMÓN?! ¡Simón dice: Púdrete! ¡Nadie me gana!</h1>
+    <div class="con">
+        <h3 id="level" class="text-center text-light my-3">¿Te atreves?</h3>
+        <div class="container d-flex row justify-content-center" id="simon">
+            <div class="divColor m-1 col-4 d-flex justify-content-end flex-shrink-0">
+                <div class="color flex-shrink-0" id="green"></div>
+            </div>
+            <div class="divColor m-1 col-4">
+                <div class="color" id="violet"></div>
+            </div>
+            <div class="divColor m-1 col-4 d-flex justify-content-end flex-shrink-0">
+                <div class="color flex-shrink-0" id="gold"></div>
+            </div>
+            <div class="divColor m-1 col-4">
+                <div class="color" id="cian"></div>
+            </div>
         </div>
-        <button class=" " id="start">SUFR*- Digo, Empieza!</button><br>
+        <button class="btn text-light mx-auto mt-3" id="start"><span class="tachar">SUFRE</span> Digo, Empieza!</button><br>
     </div>
     <script src="add.js"></script>
 </body>

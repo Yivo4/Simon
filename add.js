@@ -15,6 +15,7 @@ let violetOn = "background: #a366ff; transform: scale(1.05);";
 let violetOff = "background: #6600ff";
 let greenOn = "background: #00ff00; transform: scale(1.05);";
 let greenOff = "background: #009900";
+let redOn = "background: #dc3545; transform: scale(1.05);";
 
 let nivel;
 let secuens;
@@ -101,10 +102,10 @@ function startGame(){
                 if (puls.id == secuens[indSec]) {
                     pulsOn(puls.id);
                 } else {
-                    pulsCian.style.cssText = goldOn;
-                    pulsGold.style.cssText = goldOn;
-                    pulsViolet.style.cssText = goldOn;
-                    pulsGreen.style.cssText = goldOn;
+                    pulsCian.style.cssText = redOn;
+                    pulsGold.style.cssText = redOn;
+                    pulsViolet.style.cssText = redOn;
+                    pulsGreen.style.cssText = redOn;
                     level.innerHTML = "JAJAJA, Solo llegaste hasta el Nivel " + nivel +".";
                     simon.removeEventListener("click", testPuls);
                     start.style.cssText = "display = block;";

@@ -1,21 +1,52 @@
-.color {
-    width: 200px;
-    height: 200px;
-}
 #cian {
     background: #00a3cc;
+    border-bottom-right-radius: 100%;
 }
 #gold {
     background: #cca300;
+    border-bottom-left-radius: 100%;
 }
 #violet {
     background: #6600ff;
+    
+    border-top-right-radius: 100%;
+    flex-shrink: 0!important;
 }
 #green {
     background: #009900;
+    
+    border-top-left-radius: 100%;
 }
 #start {
-    display: block;
-    margin: auto;
+    display: block;  
     font-size:20px;
+    background: #009900;
+    animation: mymove 6s infinite;
+    animation-direction: reverse;  
+
+}
+@keyframes mymove {
+    0% {background-color: #009900;}
+    30% {background-color: #6600ff;}
+    75% {background-color: #cca300;}
+    100% {background-color: #00a3cc;}
+  }
+.color {
+    width:150px;
+    height: 150px;
+}
+.row>* {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+.con {
+    width:fit-content;
+    margin: auto;
+}
+.tachar {
+    text-decoration: line-through;
 }
